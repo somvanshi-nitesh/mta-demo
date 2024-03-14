@@ -1,6 +1,6 @@
 # Spring Boot Hello World
 
-**A simple Spring Boot 2.x app to send hello world message to a user**
+**A simple Spring Boot 2.x app to send hello world message which is deployed using MTA on CloudFoundry**
 
 ## Requirements
  * Java 11
