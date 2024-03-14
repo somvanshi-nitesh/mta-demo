@@ -9,9 +9,9 @@ modules:
     provides:
       - name: backend-api
     build-parameters:
-      builder: custom
       commands:
         - echo "Building Spring Boot application"
         - mvn clean install -DskipTests
     parameters:
       memory: 512M
+
