@@ -1,0 +1,17 @@
+ID: com.testing
+version: 1.0.0
+_schema-version: "3.1"
+
+modules:
+  - name: backend
+    type: java
+    path: backend
+    provides:
+      - name: backend-api
+    build-parameters:
+      builder: custom
+      commands:
+        - echo "Building Spring Boot application"
+        - mvn clean install
+    parameters:
+      memory: 512M
