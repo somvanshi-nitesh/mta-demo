@@ -138,6 +138,14 @@
 			<version>1.1.3</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/org.cloudfoundry/cf-maven-plugin -->
+		<dependency>
+			<groupId>org.cloudfoundry</groupId>
+			<artifactId>cf-maven-plugin</artifactId>
+			<version>1.1.3</version>
+		</dependency>
+
+
 	</dependencies>
 
 	<build>
