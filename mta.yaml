@@ -1,9 +1,9 @@
-ID: com.testing
+ID: com.mta.deployment.demo
 version: 1.0.0
 _schema-version: "3.1"
 
 modules:
-  - name: backend
+  - name: mta-demo
     type: java
     path: .
     provides:
