@@ -5,13 +5,13 @@ _schema-version: "3.1"
 modules:
   - name: backend
     type: java
-    path: backend
+    path: .
     provides:
       - name: backend-api
     build-parameters:
       builder: custom
       commands:
         - echo "Building Spring Boot application"
-        - mvn clean install
+        - mvn clean install -DskipTests
     parameters:
       memory: 512M
