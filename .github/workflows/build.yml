@@ -24,3 +24,6 @@ jobs:
       
       - name: Build with Maven
         run: mvn clean install -DskipTests
+        
+      - name: Build Docker image
+        run: docker run --rm -v ${{ github.workspace }}:/app devxci/mbtci-java11-node14 mbt build -s /app
