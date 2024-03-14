@@ -3,7 +3,7 @@
 This is a small Spring-Boot Hello World application to demonstrate a quick and simple deployment via MTA on CloudFoundry.
 
 ## Requirements
- * Java 1.8
+ * Java 11
  * Maven
  * CloudFoundry CLI
  * Docker
