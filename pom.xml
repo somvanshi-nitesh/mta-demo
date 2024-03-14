@@ -21,12 +21,10 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
+		<java.version>11</java.version>
 		<!-- Define properties for Cloud Foundry credentials -->
 		<cf.apiEndpoint>https://api.cf.us10-001.hana.ondemand.com</cf.apiEndpoint>
 		<cf.username>niteshsomvanshi.it@gmail.com</cf.username>
-		<cf.password>Nopassword@2468</cf.password>
-		<cf.organization>5c0f872btrial</cf.organization>
 		<cf.space>dev</cf.space>
 	</properties>
 
@@ -226,7 +224,7 @@
 
 			<!-- MTA Build plugin -->
 			<plugin>
-				<groupId>com.sap.cloud</groupId>
+				<groupId>org.cloudfoundry</groupId>
 				<artifactId>cf-maven-plugin</artifactId>
 				<version>1.1.3</version>
 				<configuration>
@@ -244,7 +242,7 @@
 						<id>assemble</id>
 						<goals>
 							<!-- Define the goal to build the MTA TAR file -->
-							<goal>build</goal>
+							<goal>push</goal>
 						</goals>
 					</execution>
 				</executions>
