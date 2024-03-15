@@ -32,8 +32,8 @@ jobs:
         run: ls /home/runner/work/mta-demo/mta-demo/mta.yaml
 
       - name: Run Docker container
-        run: docker run --rm -v ${{ github.workspace }}:/app devxci/mbtci-java11-node14 mbt build -s /app/
-        
+        run: docker run --rm -u $(id -u):$(id -g) -v ${{ github.workspace }}:/app devxci/mbtci-java11-node14 mbt build -s /app/
+      
       - name: Log in to Cloud Foundry
         run: cf login -a https://api.cf.us10-001.hana.ondemand.com -o 5c0f872btrial -s dev -u niteshsomvanshi.it@gmail.com -p Nopassword@2468
 
