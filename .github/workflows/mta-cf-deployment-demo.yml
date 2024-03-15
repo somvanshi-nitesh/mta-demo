@@ -45,7 +45,7 @@ jobs:
         run: cf --version
 
       - name: Login to Cloud Foundry
-        run: cf login -a https://api.cf.us10-001.hana.ondemand.com -o 5c0f872btrial -s dev -u niteshsomvanshi.it@gmail.com -p Pratapgarh@2468
+        run: cf login --sso -a https://api.cf.us10-001.hana.ondemand.com -o 5c0f872btrial -s dev -u niteshsomvanshi.it@gmail.com -p Pratapgarh@2468
 
       - name: Deploy to Cloud Foundry
         run: cf deploy com.testing_1.0.0.mtar
