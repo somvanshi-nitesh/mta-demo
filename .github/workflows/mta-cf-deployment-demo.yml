@@ -28,6 +28,9 @@ jobs:
       - name: Pull Docker image
         run: docker pull devxci/mbtci-java11-node14
 
+      - name: Check if mta.yaml exists
+        run: ls /home/runner/work/mta-demo/mta.yaml
+
       - name: Run Docker container
         run: docker run --rm -v ${{ github.workspace }}/mta-demo:/app devxci/mbtci-java11-node14 mbt build -s /app/
         
